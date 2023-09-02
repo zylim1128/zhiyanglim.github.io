@@ -7,7 +7,9 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
-      <div>Website is currently under construction!</div>
+      <div>
+        <h1>Website is currently under construction!</h1>
+      </div>
       <main>
         <About />
         <Contact />
