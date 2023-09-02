@@ -6,10 +6,13 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <main>
-      <About />
-      <Contact />
-    </main>
+    <>
+      <div>Website is currently under construction!</div>
+      <main>
+        <About />
+        <Contact />
+      </main>
+    </>
   );
 }
 
