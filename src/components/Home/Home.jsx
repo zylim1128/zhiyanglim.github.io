@@ -1,7 +1,8 @@
-import React from 'react'
-import "./home.css";
-import Social from './Social';
+import React from 'react';
 import Data from "./Data";
+import ScrollDown from './ScrollDown';
+import Social from './Social';
+import "./home.css";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
 
                 <Data />
             </div>
+            <ScrollDown />
         </div>
     </section>
   )
