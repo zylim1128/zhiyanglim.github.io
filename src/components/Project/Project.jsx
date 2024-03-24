@@ -12,6 +12,15 @@ const project = [
     link: "https://reenas-dynamite-site.webflow.io/circle",
   },
   {
+    time: "Jan 2024 - March 2024",
+    title: "Nicebreakers",
+    description: [
+      "Implemented a web application that collects icebrakers",
+    ],
+    skills: ["React", "Javascript", "Documentation"],
+    link: "https://main.d3pb2yef2pgy2m.amplifyapp.com/",
+  },
+  {
     time: "Oct 2022",
     title: "Aidhere",
     description: [
@@ -24,7 +33,7 @@ const project = [
     time: "Mar 2023 - June 2023",
     title: "333gle",
     description: [
-      "Created a toy search engine with concurrent networking and disk-backed search query processing with file crawling and indexing",
+      "Built a C/C++ search engine optimizing data retrieval with hash tables, prioritizing security through advanced POSIX file/network I/O management.",
     ],
     skills: ["C++", "Socket programming", "HTTP", "Boost"],
     link: "https://courses.cs.washington.edu/courses/cse333/23sp/",
@@ -40,6 +49,7 @@ const project = [
 
 function Project() {
   return (
+    <section className="projects section" id="project">
     <Box
       id="project"
       sx={{
@@ -72,6 +82,7 @@ function Project() {
         </Box>
       ))}
     </Box>
+    </section>
   );
 }
 

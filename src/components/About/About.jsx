@@ -22,8 +22,8 @@ const About = () => {
             A current Teaching Assistant (CSE 312), Research Assistant (Security and Privacy Lab) and Software Engineer Lead (UW CIRCLE Mobile Application) at University of Washington
           </p>
 
-          <a download="" href={Resume} className="button button--flex">
-            Download Resume
+          <a href={Resume} target="_blank" rel="noopener noreferrer" className="button button--flex">
+            Resume
             <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +51,11 @@ const About = () => {
               </svg>
           </a>
         </div>
-        <Project />
+        <h2 className="section__title">Experience</h2>
         <Experience />
+        <h2 className="section__title">Projects</h2>
+        <Project />
+        
       </div>
     </section>
   )
