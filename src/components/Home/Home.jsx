@@ -7,7 +7,7 @@ import "./home.css";
 const Home = () => {
   return (
     <section className="home section" id="home">
-        <p>Website is currently under construction!</p>
+        {/*<p>Website is currently under construction!</p>*/}
         <div className="home_container container grid">
             <div className="home__content grid">
                 <Social />

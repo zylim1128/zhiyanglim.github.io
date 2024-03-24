@@ -9,7 +9,7 @@ const project = [
       "Implement a mobile application that connects international students at UW with the campus resources",
     ],
     skills: ["React Native", "Figma"],
-    link: "https://github.com/zylim1128/CIRCLE_APP_REACT",
+    link: "https://reenas-dynamite-site.webflow.io/circle",
   },
   {
     time: "Oct 2022",

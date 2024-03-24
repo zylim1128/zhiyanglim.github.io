@@ -2,7 +2,9 @@ import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/profile.jpg";
 import Resume from "../../assets/ZhiYang-Resume.pdf";
-import Info from './Info';
+// import Info from './Info';
+import Project from "../Project/Project"
+import Experience from '../Experience/Experience';
 
 const About = () => {
   return (
@@ -14,10 +16,10 @@ const About = () => {
         <img src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
-          <Info />
+          {/*<Info />*/}
 
           <p className="about__description">
-            Description goes here
+            A current Teaching Assistant (CSE 312), Research Assistant (Security and Privacy Lab) and Software Engineer Lead (UW CIRCLE Mobile Application) at University of Washington
           </p>
 
           <a download="" href={Resume} className="button button--flex">
@@ -49,6 +51,8 @@ const About = () => {
               </svg>
           </a>
         </div>
+        <Project />
+        <Experience />
       </div>
     </section>
   )
