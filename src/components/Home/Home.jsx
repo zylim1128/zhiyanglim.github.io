@@ -1,7 +1,7 @@
 import React from 'react';
 import Data from "./Data";
 import ScrollDown from './ScrollDown';
-import Social from '../Contact/Contact';
+import Contact from '../Contact/Contact';
 import "./home.css";
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         {/*<p>Website is currently under construction!</p>*/}
         <div className="home_container container grid">
             <div className="home__content grid">
-                <Social />
+                <Contact />
 
                 <div className="home__img"></div>
 
