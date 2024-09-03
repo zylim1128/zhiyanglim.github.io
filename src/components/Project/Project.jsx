@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Typography, Link, List, ListItem, ListItemText } from "@mui/material";
+import "./project.css";
 
-const project = [
+const projects = [
   {
     time: "June 2023 - Present",
     title: "UW CIRCLE Mobile Application",
@@ -15,7 +15,7 @@ const project = [
     time: "Jan 2024 - March 2024",
     title: "Nicebreakers",
     description: [
-      "Implemented a web application that collects icebrakers",
+      "Implemented a web application that collects icebreakers",
     ],
     skills: ["React", "Javascript", "Documentation"],
     link: "https://main.d3pb2yef2pgy2m.amplifyapp.com/",
@@ -49,39 +49,34 @@ const project = [
 
 function Project() {
   return (
-    <section className="projects section" id="project">
-    <Box
-      id="project"
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 5,
-        my: 5,
-      }}
-      component="section"
-    >
-      {project.map((item) => (
-        <Box key={item.title}>
-          <Typography variant="h5">{item.title}</Typography>
-          <Typography variant="subtitle1">{item.time}</Typography>
-          <Typography variant="body1">
-            {item.description.map((desc, index) => (
-              <p key={index}>{desc}</p>
-            ))}
-          </Typography>
-          <List>
-            {item.skills.map((skill, index) => (
-              <ListItem key={index}>
-                <ListItemText primary={skill} />
-              </ListItem>
-            ))}
-          </List>
-          <Link href={item.link} target="_blank" rel="noopener noreferrer">
-            Learn More
-          </Link>
-        </Box>
-      ))}
-    </Box>
+    <section id="projects" className="project-section">
+      <h2 className="section__title">Projects</h2>
+      <div className="project-list">
+        {projects.map((item, index) => (
+          <div key={index} className="project-item">
+            <div className="project-header">
+              <h3>{item.title}</h3>
+              <span className="project-time">{item.time}</span>
+            </div>
+            <ul className="project-description">
+              {item.description.map((desc, descIndex) => (
+                <li key={descIndex}>{desc}</li>
+              ))}
+            </ul>
+            <div className="project-skills">
+              <h4>Skills:</h4>
+              <ul>
+                {item.skills.map((skill, skillIndex) => (
+                  <li key={skillIndex}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="project-link">
+              Learn More
+            </a>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

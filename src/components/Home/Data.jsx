@@ -56,9 +56,9 @@ const Data = () => {
         </svg>
         </h1>
 
-        <h3 className="home__subtitle">Software Engineer</h3>
+        <h3 className="home__subtitle">BS/MS Computer Science Student</h3>
         <p className="home__description">
-        Hello, I am Zhi Yang! I am a junior studying Computer Science at the University of Washington. Scroll down to learn more about me and my projects.
+        Hello, I am Zhi Yang! A senior studying Computer Science at the University of Washington. Scroll down to learn more about me, my experiences and my projects.
         </p>
 
         <a href="#contact" className="button button-flex">

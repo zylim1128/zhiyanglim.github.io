@@ -1,8 +1,5 @@
 import React from 'react';
 import "./about.css";
-// import Info from './Info';
-import Project from "../Project/Project"
-import Experience from '../Experience/Experience';
 
 const About = () => {
   return (
@@ -25,10 +22,6 @@ const About = () => {
             In addition to my technical work, I run a YouTube channel where I solve Leetcode questions and provide explanations to help beginners improve their problem-solving skills.
           </p>
         </div>
-        <h2 className="section__title">Experience</h2>
-        <Experience />
-        <h2 className="section__title">Projects</h2>
-        <Project />
         
       </div>
     </section>

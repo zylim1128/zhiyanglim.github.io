@@ -1,0 +1,83 @@
+.project-section {
+    padding: 60px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.project-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+.project-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.project-header {
+    margin-bottom: 15px;
+}
+  
+.project-header h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+  
+.project-time {
+    font-style: italic;
+    color: #666;
+}
+  
+.project-description {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+  
+.project-description li {
+    margin-bottom: 5px;
+}
+  
+.project-skills {
+    margin-bottom: 15px;
+}
+  
+.project-skills h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+  
+.project-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+  
+.project-skills li {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+  
+.project-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.project-link:hover {
+    text-decoration: underline;
+}
