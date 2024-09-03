@@ -20,14 +20,14 @@ const data = [
     icon: <GitHubIcon />,
   },
   {
-    link: "",
+    link: "/docs/Zhi_Yang_Resume.pdf",
     icon: <ArticleIcon />,
   },
 ];
 
 function Contact() {
   return (
-    <ButtonGroup variant="outlined">
+    <ButtonGroup orientation="vertical" variant="outlined">
       {data.map((d) => {
         return (
           <Link
@@ -38,7 +38,7 @@ function Contact() {
             <IconButton
               sx={{
                 "&:hover": {
-                  color: "primary.main",
+                  color: "var(--title-color)",
                 },
               }}
             >

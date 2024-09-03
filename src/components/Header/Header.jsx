@@ -25,16 +25,18 @@ const Header = () => {
                     </li>
 
                     <li className="nav__item">
+                        <a href="#experiences" className="nav__link">
+                            <i className="uil uil-message nav__icon"></i> Experiences
+                        </a>
+                    </li>
+
+                    <li className="nav__item">
                         <a href="#projects" className="nav__link">
                             <i className="uil uil-file nav__icon"></i> Projects
                         </a>
                     </li>
 
-                    <li className="nav__item">
-                        <a href="#contact" className="nav__link">
-                            <i className="uil uil-message nav__icon"></i> Contact
-                        </a>
-                    </li>
+                    
                 </ul>
 
                 <i class="uil uil-times nav__close" onClick={() => 

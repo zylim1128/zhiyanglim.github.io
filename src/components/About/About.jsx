@@ -1,7 +1,5 @@
 import React from 'react';
 import "./about.css";
-import AboutImg from "../../assets/profile.jpg";
-import Resume from "../../assets/ZhiYang-Resume.pdf";
 // import Info from './Info';
 import Project from "../Project/Project"
 import Experience from '../Experience/Experience';
@@ -13,16 +11,17 @@ const About = () => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
           {/*<Info />*/}
 
           <p className="about__description">
-            A current Teaching Assistant (CSE 312), Research Assistant (Security and Privacy Lab) and Software Engineer Lead (UW CIRCLE Mobile Application) at University of Washington
+          Currently working as a teaching assistant and previously a research assistant under Prof. Franzi Roesner at the Security and Privacy Lab, I am deeply interested in AI/ML and software development. I'm excited to share with you a collection of projects that reflect both my academic journey and my personal exploration. You can find my past projects in my repositories and pinned repositories, including an ongoing UW CIRCLE web app that will be launched in mid-July, my past hackathon projects, and others.
+
+          In addition, I run a YouTube channel where I solve Leetcode questions and provide explanations to help beginners improve their problem-solving skills.
           </p>
 
-          <a href={Resume} target="_blank" rel="noopener noreferrer" className="button button--flex">
+          <a href={"docs/ZhiYang-Resume.pdf"} target="_blank" rel="noopener noreferrer" className="button button--flex">
             Resume
             <svg
                 class="button__icon"
