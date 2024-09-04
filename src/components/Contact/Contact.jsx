@@ -4,37 +4,41 @@ import ArticleIcon from "@mui/icons-material/Article";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
-import { IconButton, ButtonGroup, Link } from "@mui/material";
+import { IconButton, ButtonGroup, Link, Tooltip } from "@mui/material";
 
 const data = [
   {
     link: "mailto:zylim@uw.edu",
     icon: <MailIcon />,
+    label: "Email",
   },
   {
     link: "https://www.linkedin.com/in/lim-zhiyang/",
     icon: <LinkedInIcon />,
+    label: "LinkedIn",
   },
   {
     link: "https://github.com/zylim1128",
     icon: <GitHubIcon />,
+    label: "GitHub",
   },
   {
-    link: "/docs/Zhi_Yang_Resume.pdf",
+    link: "/docs/ZhiYang-Resume.pdf",
     icon: <ArticleIcon />,
+    label: "Resume",
   },
 ];
 
 function Contact() {
   return (
     <ButtonGroup orientation="vertical" variant="outlined">
-      {data.map((d) => {
-        return (
-          <Link
-            href={d.link}
-            key={d.link}
-            target={d.link.startsWith("https") ? "_blank" : "_self"}
-          >
+       {data.map((d) => (
+        <Link
+          href={d.link}
+          key={d.link}
+          target={d.link.startsWith("https") ? "_blank" : "_self"}
+        >
+          <Tooltip title={d.label} placement="left">
             <IconButton
               sx={{
                 "&:hover": {
@@ -44,9 +48,9 @@ function Contact() {
             >
               {d.icon}
             </IconButton>
-          </Link>
-        );
-      })}
+          </Tooltip>
+        </Link>
+      ))}
     </ButtonGroup>
   );
 }
