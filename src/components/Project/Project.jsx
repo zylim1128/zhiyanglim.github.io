@@ -1,7 +1,20 @@
 import React from "react";
 import "./project.css";
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 const projects = [
+  {
+    time: "June 2024",
+    title: "Detoxify | Open Source AI Hackathon #6",
+    description: [
+      <>Winner of the Experimental Track
+      <EmojiEventsIcon /></>,
+      
+      "Developed an AI application using Meta Llama3 70b instruct LLM for toxicity classification in gaming chat. ",
+    ],
+    skills: ["Flask", "LangChain/OctoAI", "Python", "HTML/CSS"],
+    link: "https://github.com/NoxNovus/Detoxify",
+  },
   {
     time: "June 2023 - Present",
     title: "UW CIRCLE Mobile Application",
@@ -9,7 +22,7 @@ const projects = [
       "Implement a mobile application that connects international students at UW with the campus resources",
     ],
     skills: ["React Native", "Figma"],
-    link: "https://reenas-dynamite-site.webflow.io/circle",
+    link: "https://app.circle.uw.edu/",
   },
   {
     time: "Jan 2024 - March 2024",
@@ -21,8 +34,17 @@ const projects = [
     link: "https://main.d3pb2yef2pgy2m.amplifyapp.com/",
   },
   {
+    time: "Oct 2023",
+    title: "DubWalks | DubHacks 23'",
+    description: [
+      "Developed a React Native MVP app to connect UW students for safe walks home, enhancing campus safety and community engagement",
+    ],
+    skills: ["React Native", "Javascript", "Figma"],
+    link: "https://devpost.com/software/dubwalks/",
+  },
+  {
     time: "Oct 2022",
-    title: "Aidhere",
+    title: "Aidhere | DubHacks 22'",
     description: [
       "Implement a MVP mobile application that helps people in emergency to seek help from nearby certified first responder in DubHacks",
     ],
