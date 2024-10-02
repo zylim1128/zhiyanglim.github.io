@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home_title">
-            Zhi Yang Lim
+            Zhi Yang (Jason) Lim
         <svg
             width="36"
             height="36"
@@ -56,9 +56,9 @@ const Data = () => {
         </svg>
         </h1>
 
-        <h3 className="home__subtitle">BS/MS Computer Science Student</h3>
+        <h3 className="home__subtitle">Ms in Computer Science</h3>
         <p className="home__description">
-        Hello, I am Zhi Yang! A senior studying Computer Science at the University of Washington. Scroll down to learn more about me, my experiences and my projects.
+        Hello, I am Zhi Yang! A Master student studying Computer Science at the University of Washington. Scroll down to learn more about me, my experiences and my projects.
         </p>
 
         <a href="#contact" className="button button-flex">

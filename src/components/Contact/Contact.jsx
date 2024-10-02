@@ -4,6 +4,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { IconButton, ButtonGroup, Link, Tooltip } from "@mui/material";
 
 const data = [
@@ -27,6 +28,11 @@ const data = [
     icon: <ArticleIcon />,
     label: "Resume",
   },
+  {
+    link: "https://www.youtube.com/@LeetcodeDailyGrind",
+    icon: <YouTubeIcon />,
+    label: "YouTube",
+  },
 ];
 
 function Contact() {
@@ -36,7 +42,7 @@ function Contact() {
         <Link
           href={d.link}
           key={d.link}
-          target={d.link.startsWith("https") ? "_blank" : "_self"}
+          target="_blank"
         >
           <Tooltip title={d.label} placement="left">
             <IconButton
