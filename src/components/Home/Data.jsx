@@ -56,7 +56,7 @@ const Data = () => {
         </svg>
         </h1>
 
-        <h3 className="home__subtitle">Ms in Computer Science</h3>
+        <h3 className="home__subtitle">MS in Computer Science</h3>
         <p className="home__description">
         Hello, I am Zhi Yang! A Master student studying Computer Science at the University of Washington. Scroll down to learn more about me, my experiences and my projects.
         </p>
