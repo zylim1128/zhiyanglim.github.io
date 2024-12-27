@@ -13,6 +13,8 @@ function App() {
                     Project</Link>
                 <Link href="#" underline="none">
                     Experience</Link>
+                <Link href="#" underline="none">
+                    Resume</Link>
             </Stack>
         </div>
 	);

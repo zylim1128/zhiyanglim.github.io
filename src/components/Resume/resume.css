@@ -1,0 +1,16 @@
+#resume iframe{
+    position: relative;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  

@@ -61,7 +61,7 @@ const experience = [
 
 function Experience() {
   return (
-    <section id="experiences" className="experience-section">
+    <section id="experience" className="experience-section">
       <h2 className="section__title">Experience</h2>
       <div className="experience-list">
         {experience.map((item, index) => (
