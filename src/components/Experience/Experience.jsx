@@ -1,12 +1,13 @@
 import React from "react";
 import "./experience.css";
+import ravinLogo from "../../assets/raivn-logo.png";
 
 const experience = [
   {
     time: "June 2024 - Present",
     title: "ML Research Assistant",
     company: "RAIVN Lab UW",
-    logo: "../assets/raivn-logo.png",
+    logo: ravinLogo,
     description: [
       "Developed and evaluated a machine learning model for image editing using REALEDIT; co-authored a paper currently under review for CVPR 2025",
     ],
@@ -56,28 +57,25 @@ function Experience() {
       <h2 className="section__title">Experience</h2>
       <div className="experience-list">
         {experience.map((item, index) => (
-          <a
-            key={index}
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="experience-item">
-            <div className="experience-content">
-              <img src={item.logo} alt={`${item.company} logo`} className="experience-logo" />
-            
-              <div className="experience-header">
-                <h3>{item.title}</h3>
-                <span className="experience-company">{item.company}</span>
-                <span className="experience-time">{item.time}</span>
-                <div className="arrow-icon">↗</div>
+          <div key={index} className="experience-item">
+            <div className="experience-row">
+              <div className="logo-column">
+                <img src={item.logo} alt={`${item.company} logo`} className="experience-logo" />
               </div>
-              <ul className="experience-description">
-                {item.description.map((desc, descIndex) => (
-                  <li key={descIndex}>{desc}</li>
-                ))}
-              </ul>
+              <div className="details-column">
+                <div className="experience-header">
+                  <h3>{item.title}</h3>
+                  <span className="experience-company">{item.company}</span>
+                  <span className="experience-time">{item.time}</span>
+                </div>
+                <ul className="experience-description">
+                  {item.description.map((desc, descIndex) => (
+                    <li key={descIndex}>{desc}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>
