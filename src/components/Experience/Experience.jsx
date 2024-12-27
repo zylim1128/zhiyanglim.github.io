@@ -35,7 +35,7 @@ const experience = [
     description: [
       "Research Project: Investigating Security and Privacy Practices in Childcare Apps.",
     ],
-    link: "https://seclab.cs.washington.edu/",
+    link: "docs/Research_Poster.pdf",
   },
   {
     time: "July 2023 - August 2023",
