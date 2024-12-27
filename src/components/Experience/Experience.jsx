@@ -3,13 +3,22 @@ import "./experience.css";
 
 const experience = [
   {
+    time: "June 2024 - Present",
+    title: "Research Assistant",
+    company: "RAIVN Lab UW",
+    description: [
+      "Developed and evaluated a machine learning model for image editing using REALEDIT; co-authored a paper currently under review for CVPR 2025",
+    ],
+    link: "https://raivn.cs.washington.edu/",
+  },
+  {
     time: "June 2023 - Present",
     title: "Undergraduate Teaching Assistant",
     company: "Paul G. Allen School of Computer Science and Engineering",
     description: [
       "Led comprehensive review sessions during office hours, addressing questions from problem sets for over 50 students weekly for 4 quarters",
     ],
-    link: "https://courses.cs.washington.edu/courses/cse312/24su/staff/",
+    link: "https://courses.cs.washington.edu/courses/cse312/24au/staff.php",
   },
   {
     time: "Jan 2024 - June 2024",
@@ -46,7 +55,12 @@ function Experience() {
       <h2 className="section__title">Experience</h2>
       <div className="experience-list">
         {experience.map((item, index) => (
-          <div key={index} className="experience-item">
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="experience-item">
             <div className="experience-header">
               <h3>{item.title}</h3>
               <span className="experience-company">{item.company}</span>
@@ -57,10 +71,7 @@ function Experience() {
                 <li key={descIndex}>{desc}</li>
               ))}
             </ul>
-            <a href={item.link} target="_blank" rel="noopener noreferrer" className="experience-link">
-              Learn More
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </section>
