@@ -4,6 +4,15 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
 const projects = [
   {
+    time: "July 2024 - Present",
+    title: "YouTube Channel - LeetcodeDailyGrind",
+    description: [
+      "Educational content creator on LeetCode problems, coding interviews, and software engineering topics",
+    ],
+    skills: ["Python", "Coding Interviews", "LeetCode", "Problem Solving"],
+    link: "https://www.youtube.com/@LeetcodeDailyGrind",
+  },
+  {
     time: "June 2024",
     title: "Detoxify | Open Source AI Hackathon #6",
     description: [
