@@ -13,10 +13,10 @@ const experience = [
   },
   {
     time: "June 2023 - Present",
-    title: "Undergraduate Teaching Assistant",
+    title: "Teaching Assistant",
     company: "Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Led comprehensive review sessions during office hours, addressing questions from problem sets for over 50 students weekly for 4 quarters",
+      "7+ quarters of experience teaching probability and Data Structures courses for CS majors. Recognized for excellent teaching awards in year 2023-24",
     ],
     link: "https://courses.cs.washington.edu/courses/cse312/24au/staff.php",
   },
@@ -36,10 +36,10 @@ const experience = [
     description: [
       "Developed a dynamic website from ground up using React, AWS Amplify, and GraphQL within a 5-week timeframe.",
     ],
-    link: "https://github.com/jamestlee513/spark-intership-website",
+    link: "https://www.linkedin.com/company/spark-internship/posts/?feedView=all",
   },
   {
-    time: "June 2023",
+    time: "June 2022 - June 2023",
     title: "Peer Adviser",
     company: "UW CIRCLE",
     description: [
@@ -65,6 +65,7 @@ function Experience() {
               <h3>{item.title}</h3>
               <span className="experience-company">{item.company}</span>
               <span className="experience-time">{item.time}</span>
+              <div className="arrow-icon">↗</div>
             </div>
             <ul className="experience-description">
               {item.description.map((desc, descIndex) => (

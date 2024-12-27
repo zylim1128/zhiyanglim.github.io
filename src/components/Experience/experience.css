@@ -17,19 +17,42 @@
   }
   
   .experience-item {
+    display: block;
     background-color: #f8f8f8;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .experience-item:hover .arrow-icon {
+    transform: translate(3px, -3px); /* Slight movement upwards and right on hover */
   }
   
   .experience-header {
+    position: relative;
     margin-bottom: 15px;
   }
   
   .experience-header h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+  }
+
+  .arrow-icon {
+    position: absolute; /* Position relative to the header */
+    top: 0; /* Align at the top */
+    right: 0; /* Align to the right */
+    font-size: 1.0rem;
+    transition: transform 0.2s ease;
   }
   
   .experience-company {
@@ -59,6 +82,3 @@
     font-weight: bold;
   }
   
-  .experience-link:hover {
-    text-decoration: underline;
-  }
