@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5938c312.css",
-    "main.js": "/static/js/main.1c3eca55.js",
+    "main.css": "/static/css/main.e8b6425c.css",
+    "main.js": "/static/js/main.64d7d489.js",
     "static/js/787.0f15b36d.chunk.js": "/static/js/787.0f15b36d.chunk.js",
     "static/media/raivn-logo.png": "/static/media/raivn-logo.fd5d2855eadcff58ccf8.png",
     "static/media/uw_seclab.png": "/static/media/uw_seclab.ee211f127d6ffddf4d48.png",
@@ -10,12 +10,12 @@
     "static/media/uwcse.jpg": "/static/media/uwcse.e4b5bdb45d5692747d64.jpg",
     "static/media/spark.jpeg": "/static/media/spark.ec6564948d8e05f85927.jpeg",
     "index.html": "/index.html",
-    "main.5938c312.css.map": "/static/css/main.5938c312.css.map",
-    "main.1c3eca55.js.map": "/static/js/main.1c3eca55.js.map",
+    "main.e8b6425c.css.map": "/static/css/main.e8b6425c.css.map",
+    "main.64d7d489.js.map": "/static/js/main.64d7d489.js.map",
     "787.0f15b36d.chunk.js.map": "/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5938c312.css",
-    "static/js/main.1c3eca55.js"
+    "static/css/main.e8b6425c.css",
+    "static/js/main.64d7d489.js"
   ]
 }
