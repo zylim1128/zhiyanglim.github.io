@@ -4,8 +4,9 @@ import "./experience.css";
 const experience = [
   {
     time: "June 2024 - Present",
-    title: "Research Assistant",
+    title: "ML Research Assistant",
     company: "RAIVN Lab UW",
+    logo: "../assets/raivn-logo.png",
     description: [
       "Developed and evaluated a machine learning model for image editing using REALEDIT; co-authored a paper currently under review for CVPR 2025",
     ],
@@ -18,7 +19,7 @@ const experience = [
     description: [
       "7+ quarters of experience teaching probability and Data Structures courses for CS majors. Recognized for excellent teaching awards in year 2023-24",
     ],
-    link: "https://courses.cs.washington.edu/courses/cse312/24au/staff.php",
+    link: "https://courses.cs.washington.edu/courses/cse312/24au/",
   },
   {
     time: "Jan 2024 - June 2024",
@@ -32,7 +33,7 @@ const experience = [
   {
     time: "July 2023 - August 2023",
     title: "Software Engineering Intern",
-    company: "Spark Internship Program",
+    company: "Spark",
     description: [
       "Developed a dynamic website from ground up using React, AWS Amplify, and GraphQL within a 5-week timeframe.",
     ],
@@ -61,17 +62,21 @@ function Experience() {
             target="_blank"
             rel="noopener noreferrer"
             className="experience-item">
-            <div className="experience-header">
-              <h3>{item.title}</h3>
-              <span className="experience-company">{item.company}</span>
-              <span className="experience-time">{item.time}</span>
-              <div className="arrow-icon">↗</div>
+            <div className="experience-content">
+              <img src={item.logo} alt={`${item.company} logo`} className="experience-logo" />
+            
+              <div className="experience-header">
+                <h3>{item.title}</h3>
+                <span className="experience-company">{item.company}</span>
+                <span className="experience-time">{item.time}</span>
+                <div className="arrow-icon">↗</div>
+              </div>
+              <ul className="experience-description">
+                {item.description.map((desc, descIndex) => (
+                  <li key={descIndex}>{desc}</li>
+                ))}
+              </ul>
             </div>
-            <ul className="experience-description">
-              {item.description.map((desc, descIndex) => (
-                <li key={descIndex}>{desc}</li>
-              ))}
-            </ul>
           </a>
         ))}
       </div>
