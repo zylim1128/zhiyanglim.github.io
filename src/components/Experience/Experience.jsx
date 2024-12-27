@@ -1,6 +1,10 @@
 import React from "react";
 import "./experience.css";
 import ravinLogo from "../../assets/raivn-logo.png";
+import uwCSE from "../../assets/uwcse.jpg";
+import uwSecLab from "../../assets/uw_seclab.png";
+import sparkLogo from "../../assets/spark.jpeg";
+import uwCircle from "../../assets/uwcircle.png";
 
 const experience = [
   {
@@ -17,6 +21,7 @@ const experience = [
     time: "June 2023 - Present",
     title: "Teaching Assistant",
     company: "Paul G. Allen School of Computer Science and Engineering",
+    logo: uwCSE,
     description: [
       "7+ quarters of experience teaching probability and Data Structures courses for CS majors. Recognized for excellent teaching awards in year 2023-24",
     ],
@@ -26,6 +31,7 @@ const experience = [
     time: "Jan 2024 - June 2024",
     title: "Undergraduate Researcher",
     company: "Security and Privacy Lab UW",
+    logo: uwSecLab,
     description: [
       "Research Project: Investigating Security and Privacy Practices in Childcare Apps.",
     ],
@@ -35,6 +41,7 @@ const experience = [
     time: "July 2023 - August 2023",
     title: "Software Engineering Intern",
     company: "Spark",
+    logo: sparkLogo,
     description: [
       "Developed a dynamic website from ground up using React, AWS Amplify, and GraphQL within a 5-week timeframe.",
     ],
@@ -44,6 +51,7 @@ const experience = [
     time: "June 2022 - June 2023",
     title: "Peer Adviser",
     company: "UW CIRCLE",
+    logo: uwCircle,
     description: [
       "Connected international undergraduates with campus resources. Provided 1-to-1 consulting services to students with difficulties. Organized fun activities to enhance cultural understanding, as well as social aspects of being a college student in the U.S.",
     ],
@@ -63,19 +71,29 @@ function Experience() {
                 <img src={item.logo} alt={`${item.company} logo`} className="experience-logo" />
               </div>
               <div className="details-column">
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="experience-item"
+              >
                 <div className="experience-header">
                   <h3>{item.title}</h3>
                   <span className="experience-company">{item.company}</span>
                   <span className="experience-time">{item.time}</span>
+                  <div className="arrow-icon">↗</div>
                 </div>
                 <ul className="experience-description">
                   {item.description.map((desc, descIndex) => (
                     <li key={descIndex}>{desc}</li>
                   ))}
                 </ul>
+                </a>
               </div>
             </div>
           </div>
+          
         ))}
       </div>
     </section>

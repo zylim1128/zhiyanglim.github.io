@@ -17,11 +17,11 @@ const projects = [
   },
   {
     time: "June 2023 - Present",
-    title: "UW CIRCLE Mobile Application",
+    title: "UW CIRCLE Web Application",
     description: [
       "Implement a mobile application that connects international students at UW with the campus resources",
     ],
-    skills: ["React Native", "Figma"],
+    skills: ["React.js", "Figma"],
     link: "https://app.circle.uw.edu/",
   },
   {

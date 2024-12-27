@@ -21,7 +21,6 @@
   background-color: #f8f8f8;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -29,13 +28,9 @@
 
 .experience-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.experience-item:hover .arrow-icon {
-  transform: translate(3px, -3px); /* Slight movement upwards and right on hover */
-}
 
 .experience-header {
   position: relative;
@@ -87,12 +82,14 @@
   grid-template-columns: 100px auto; /* Fixed width for logo column */
   align-items: center;
   gap: 20px;
+  border: none;
 }
 
 .logo-column {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .details-column {
@@ -101,11 +98,9 @@
 }
 
 .experience-logo {
-  width: 80px;
+  width: auto;
   height: auto;
   object-fit: contain;
-  border-radius: 8px; /* Optional for rounded logos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for emphasis */
 }
 
 .section__title {
